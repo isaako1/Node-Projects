@@ -10,23 +10,24 @@
 
 <div class="container">
 <h2>Static HTML Page</h2>
-</div>
+</div><br><br>
 
-<form method="POST" action="/res_price">
+<div class="container">
+
+<form action="/getRate" method="post">
+
     <label for="">Weight of the package</label><br>
-    <input type="number"><br>
-    <label for="">Weight of the package</label><br>
-    <select>
-            <option value="Letters (Stamped)">Letters (Stamped)</option>
-            <option value="Letters (Metered)">Letters (Metered)</option>
-            <option value="Large Envelopes (Flats)">Large Envelopes (Flats)</option>
-            <option value="First-Class Package Service—Retail">First-Class Package Service—Retail</option>
-    </select><br>
+    <input type="number" name="weightPack"><br>
+    <label for="">Type of the package</label><br>
+    <select name="mType">
+            <option  value="Stamped">Letters (Stamped)</option>
+            <option  value="Metered">Letters (Metered)</option>
+            <option  value="Flats">Large Envelopes (Flats)</option>
+            <option  value="Service—Retail">First-Class Package Service—Retail</option>
+    </select><br><br>
     <input type="submit" value="Submit">
 
-    
-
 </form>
-
+</div>
 </body>
 </html>
