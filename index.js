@@ -3,7 +3,7 @@ var express = require('express');
 const path = require('path')
 var bodyParser = require('body-parser');
 var app = express();
-var port = 5000;
+
 
 
 app.set('view engine', 'ejs');
@@ -14,8 +14,9 @@ app.get('/', (req, res) => res.render('pages/static'));
 app.post('/getRate',  calculateRate);
 
 
-  app.listen(port, function () {
-    console.log("Example app listening at Port:", port);
+var server = app.listen(process.env.PORT || 5000, function () {
+  var port = server.address().port;
+  console.log("Express is working on port " + port);
 });
 
 
