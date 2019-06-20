@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% include ../partials/header.ejs %>
+</head>
+
+<body>
+
+<% include ../partials/nav.ejs %>
+
+<div class="container">
+<h2>Static HTML Page</h2>
+</div>
+
+<form method="POST" action="/res_price">
+    <label for="">Weight of the package</label><br>
+    <input type="number"><br>
+    <label for="">Weight of the package</label><br>
+    <select>
+            <option value="Letters (Stamped)">Letters (Stamped)</option>
+            <option value="Letters (Metered)">Letters (Metered)</option>
+            <option value="Large Envelopes (Flats)">Large Envelopes (Flats)</option>
+            <option value="First-Class Package Service—Retail">First-Class Package Service—Retail</option>
+    </select><br>
+    <input type="submit" value="Submit">
+
+    
+
+</form>
+
+</body>
+</html>
